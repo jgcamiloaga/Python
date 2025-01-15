@@ -6,3 +6,6 @@ Repositorio donde estaré documentando mi aprendizaje de Python
 
 - Hola Mundo
 - Tipos de datos
+- Conversión de tipos
+- Variables
+- Input de datos
