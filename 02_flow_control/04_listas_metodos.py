@@ -78,6 +78,10 @@ print('🐹' in animals) # -> False
 # Inserta el número 10 en la posición 2 usando insert().
 # Modifica el primer elemento de la lista para que sea 0.
 
+listaNumeros = [1,2,3,4,5]
+listaNumeros.append(6)
+print(listaNumeros)
+
 # Ejercicio 2: Combinar y limpiar listas
 # Crea dos listas:
 # lista_a = [1, 2, 3]
@@ -86,6 +90,15 @@ print('🐹' in animals) # -> False
 # Elimina la primera aparición del número 1 en lista_a usando remove().
 # Elimina el elemento en el índice 3 de lista_a usando pop(). Imprime el elemento eliminado.
 # Limpia completamente lista_b usando clear().
+
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6, 1, 2]
+lista_a.extend(lista_b)
+print(lista_a)
+lista_a.remove(1)
+print(lista_a)
+elementoEliminado = lista_a.pop(3)
+print(elementoEliminado)
 
 # Ejercicio 3: Slicing y eliminación con del
 # Crea una lista con los números del 1 al 10.
@@ -97,6 +110,11 @@ print('🐹' in animals) # -> False
 # Ordena la lista de forma ascendente usando sort().
 # Cuenta cuántas veces aparece el número 2 en la lista usando count().
 # Comprueba si el número 7 está en la lista usando in.
+lista_nueva = [5, 2, 8, 1, 9, 4, 2]
+lista_nueva.sort()
+print(lista_nueva)
+print(lista_nueva.count(2))
+print(7 in lista_nueva)
 
 # Ejercicio 5: Copia vs. Referencia
 # Crea una lista llamada original con los números [1, 2, 3].
@@ -105,7 +123,20 @@ print('🐹' in animals) # -> False
 # Crea una referencia a la lista original llamada referencia.
 # Modifica el primer elemento de la lista referencia a 10.
 # Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
+orginal = [1, 2, 3]
+copia_1 = orginal[:]
+copia_2 = orginal.copy()
+referencia = orginal
+referencia[0] = 10
+print(orginal)
+print(copia_1)
+print(copia_2)
+print(referencia)
 
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
 # Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+frutas = ["Manzana", "pera", "BANANA", "naranja"]
+frutas.sort(key=str.lower)
+print(frutas)
