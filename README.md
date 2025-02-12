@@ -9,3 +9,7 @@ Repositorio donde estaré documentando mi aprendizaje de Python
 - Conversión de tipos
 - Variables
 - Input de datos
+- Condicionales
+- Bucles
+- Funciones
+- Retos
