@@ -19,3 +19,10 @@ print("uno ","dos ","tres ","cuatro ","cinco ", sep= a)
 #Crea un programa que imprima tres líneas de texto, una palabra en cada línea.
 #Antes de imprimir cada palabra, el programa debe preguntar al usuario qué 
 #carácter desea utilizar al final de la línea (en lugar del salto de línea por defecto).
+
+salto = input ("Ingrese el primer caracter: ")
+salto1 = input ("Ingrese el segundo caracter: ")
+salto2 = input("Ingrese el tercer caracter: ")
+print("dana esta aprendiendo ", end = salto)
+print(" dana esta escribiendo ", end = salto1)
+print(" dana esta programando ",end = salto2)
