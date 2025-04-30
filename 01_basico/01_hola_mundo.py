@@ -9,3 +9,6 @@ print("python es genial", " 2")
 
 print("Esto se imprime", end = "\n") #salto de linea
 print("en una sola línea")
+
+#Crea un programa que solicite al usuario ingresar un carácter separador.
+#Luego, el programa debe imprimir cinco palabras separadas por el carácter ingresado.
