@@ -16,3 +16,6 @@ print("en una sola línea")
 a = input ("Ingrese un carácter separador: ")
 print("uno ","dos ","tres ","cuatro ","cinco ", sep= a)
 
+#Crea un programa que imprima tres líneas de texto, una palabra en cada línea.
+#Antes de imprimir cada palabra, el programa debe preguntar al usuario qué 
+#carácter desea utilizar al final de la línea (en lugar del salto de línea por defecto).
