@@ -1,5 +1,11 @@
 #01 - print()
 # El modulo print() es una función que imprime un mensaje en la pantalla.
 
-print("hola")
-print("mundo")
+print("Hola mundo !!")
+print('Mostrar mensaje')
+
+print("python","es","genial", sep="*") #espacio por defecto
+print("python es genial", " 2")
+
+print("Esto se imprime", end = "\n") #salto de linea
+print("en una sola línea")
