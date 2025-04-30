@@ -12,3 +12,7 @@ print("en una sola línea")
 
 #Crea un programa que solicite al usuario ingresar un carácter separador.
 #Luego, el programa debe imprimir cinco palabras separadas por el carácter ingresado.
+
+a = input ("Ingrese un carácter separador: ")
+print("uno ","dos ","tres ","cuatro ","cinco ", sep= a)
+
