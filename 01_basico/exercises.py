@@ -7,7 +7,10 @@ print("\nEjercicio 1: Imprimir mensajes")
 print("Escribe un programa que imprima tu nombre y tu ciudad en líneas separadas.")
 
 ### Completa aquí
+nombre = input (" Escribe tu nombre: ")
+ciudad = input(" Nombre de tu ciudad: ")
 
+print(f"Tu nombre es {nombre}  \n Vives en la ciudad de {ciudad}")
 
 
 
@@ -24,7 +27,11 @@ e = None
 
 ### Completa aquí
 
-
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
 
 
 
@@ -35,10 +42,15 @@ print("Convierte la cadena \"12345\" a un entero y luego a un float.")
 print("Convierte el float 3.99 a un entero. ¿Qué ocurre?")
 
 ### Completa aquí
-
-
-
-
+cadena = "12345"
+entero = int (cadena)
+decimal = float(entero)
+print(cadena)
+print(entero)
+print(decimal)
+x = 3.99 
+print(int(x))
+print(round(x))
 
 # SE IMPRIME EL NUMERO 3, ES DECIR, SE REDONDEA PARA ABAJO
 
@@ -52,7 +64,11 @@ print("Usa f-strings para imprimir una presentación.")
 
 ### Completa aquí
 
+nom = input("Tu nombre: ")
+edad = int (input("Escribe tu edad: "))
+altura = float( input("Ingrese su altura: "))
 
+print(f"Hola! Me llamo {nom} y tengo {edad}, mido {altura} metros")
 
 
 
@@ -65,6 +81,18 @@ print("3. Haz la división entera entre el número que te salió y el número 2"
 print("4. El resultado debería ser 1")
 
 ### Completa aquí
+
+import math as m
+
+PI = m.pi
+
+PI_redondeado = round(PI)
+
+division_entera = PI_redondeado // 2
+print(division_entera)
+ # / normal
+ # // el entero del decimal
+
 
 
 
