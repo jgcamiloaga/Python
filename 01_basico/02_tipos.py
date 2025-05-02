@@ -26,9 +26,14 @@ print(type(num2))
 print("NoneType")
 
 #Pedir el nombre al usuario y imprimirlo en un mensaje
-
-
+nom = input ("Escriba su nombre ")
+print("Bienvenido "+ nom )
 #Pedir la edad a dos usuarios y mostrar la suma de las edades
-
+nom1= int( input("Edad de la primera persona "))
+nom2= int (input("Edad de la segunda persona "))
+print(nom1+nom2)
 
 #Pedir el pesos de dos usuarios y mostrar la suma de los pesos
+peso1= float(input("Peso de la primera persona"))
+peso2= float(input("Peso de la segunda persona"))
+print("La suma de sus pesos es: ",(peso1+peso2))
