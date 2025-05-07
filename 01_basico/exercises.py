@@ -90,9 +90,9 @@ PI_redondeado = round(PI)
 
 division_entera = PI_redondeado // 2
 print(division_entera)
- # / normal
+ # / normalkk
  # // el entero del decimal
-
+k
 
 
 
