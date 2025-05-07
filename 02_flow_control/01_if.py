@@ -1,4 +1,30 @@
 # Condiciones en Python
+print("\n Sentencia simple condicional")
+
+edad = 18
+
+if edad>= 18 :
+    print("Eres mayor de edad")
+    print("Felicidades")
+print("\n Sentencia condicional con else")
+edad =15
+if edad >= 18:
+    print("Eres mayor de edad")
+else:
+    print("Eres menor de edad")
+
+
+print("\n Sentencia condicional elif")
+nota = 7
+if nota >= 9:
+    print("sobresaliente")
+
+elif nota >=7:
+    print("Notable")
+elif nota>= 5:
+    print("aprobado")
+else:
+    print("No estas calificado")
 
 
 
