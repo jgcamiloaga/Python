@@ -2,6 +2,7 @@
 # 01 - Bucles (while)
 # Permiten ejecutar un bloque de código repetidamente mientras se cumpla una condición
 ###
+"""
 print("\n Bucle while: ")
 #Bucle con una simple condicion
 contador=0
@@ -60,7 +61,7 @@ while numero <0:
         print("Lo que introduces debe ser un numero, que si o no peto!")
 print(f"El numero que haz introducido es {numero}")
 
-
+"""
 
 
 
@@ -77,17 +78,25 @@ print(f"El numero que haz introducido es {numero}")
 # Ejercicio 1: Cuenta atrás
 # Imprime los números del 10 al 1 usando un bucle while.
 
-
-
-
+"""
+contador = 10
+while contador > 0:
+     
+     print(contador)
+     contador-=1
+ """  
 
 # Ejercicio 2: Suma de números pares (while)
 # Calcula la suma de los números pares entre 1 y 20 (inclusive) usando un bucle while.
-
-
-
-
-
+"""
+contador =0
+acumulador = 0
+while contador<20:
+    contador+=1
+    if contador %2 ==0:
+        acumulador+=contador
+print("La suma es: ",acumulador)
+"""
 # Ejercicio 3: Factorial de un número
 # Pide al usuario que introduzca un número entero positivo.
 # Calcula su factorial usando un bucle while.
@@ -95,7 +104,13 @@ print(f"El numero que haz introducido es {numero}")
 # 5! = 5 x 4 x 3 x 2 x 1 = 120.
 
 
-
+num_pos= int(input("Ingrese un numero que sea entero positivo: "))
+factorial=1
+contador =1
+while contador<= num_pos:
+    factorial *=contador
+    contador +=1
+print(f"El factorial de {num_pos} es: ",factorial)
 
 
 # Ejercicio 4: Validación de contraseña
@@ -104,6 +119,12 @@ print(f"El numero que haz introducido es {numero}")
 # Usa un bucle while para seguir pidiendo la contraseña hasta que cumpla con los requisitos.
 # Si la contraseña es válida, imprime "Contraseña válida".
 
+contraseña= ""
+while len(contraseña)<8:
+    contraseña =input("Ingrese su contraseña: ")
+    if len(contraseña)<8:
+        print("La contraseña debe tener al menos 8 caracteres")
+print("Contraseña valida")
 
 
 
