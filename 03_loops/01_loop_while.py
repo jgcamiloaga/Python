@@ -102,7 +102,7 @@ print("La suma es: ",acumulador)
 # Calcula su factorial usando un bucle while.
 # El factorial de un número entero positivo es el producto de todos los números del 1 al ese número. Por ejemplo, el factorial de 5
 # 5! = 5 x 4 x 3 x 2 x 1 = 120.
-
+"""
 
 num_pos= int(input("Ingrese un numero que sea entero positivo: "))
 factorial=1
@@ -126,21 +126,52 @@ while len(contraseña)<8:
         print("La contraseña debe tener al menos 8 caracteres")
 print("Contraseña valida")
 
-
+"""
 
 
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
-
-
-
-
-
+"""
+numero =int(input("Introduce un numero: "))
+contador =0
+while contador <10:
+    contador += 1
+    resultado =numero * contador
+    print(f"{contador} x {numero} = {resultado}")
+  
+"""
 # Ejercicio 6: Números primos hasta N
 # Pide al usuario que introduzca un número entero positivo N.
 # Imprime todos los números primos menores o iguales que N usando un bucle while.
+"""
+n = int(input("Introduce un numero: "))
+contador = 2
+primo = True
+while contador <= n:
+    for num in range(2 ,contador):
+        if contador % num == 0:
+            primo =False
+            break
+    if primo :
+        print(contador)
+    contador+=1
+    primo=True
+"""
+print("\nEjercicio 6:")
+n = int(input("Introduce un número entero positivo N: "))
 
+numero = 2
+while numero <= n:
+  es_primo = True  # Asumimos que el número es primo hasta que se demuestre lo contrario
+  divisor = 2
+  while divisor * divisor <= numero:  # Optimizamos: no es necesario probar divisores hasta numero
+    if numero % divisor == 0:
+      es_primo = False  # Si encontramos un divisor, no es primo
+      break  # Salimos del bucle interior
+    divisor += 1
+  if es_primo:
+    print(numero)
 
-
+  numero += 1
 

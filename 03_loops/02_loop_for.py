@@ -3,13 +3,37 @@
 # Permiten ejecutar un bloque de código repetidamente mientras ITERA un iterable o una lista
 ###
 
+print("\n Bucle for: ")
+#Iterar una lista
+frutas  = ["manzana","pera","mandarina"]
+for fruta in frutas:
+    print(fruta)
+
+#Iterar sobre cualquier cosa que sea iterable
+cadena ="dana"
+for caracter in cadena :
+    print(caracter)
+
+#enumerate()
+frutas =["manzana","pera","mandarina"]
+for idx,value in enumerate(frutas):
+    print(f"El indice es {idx} y la fruta es {value}")
 
 
+#bucles anidados -meter uno dentro de otro for dentro de otro y asi 
+letras=["a","b","c"]
+numeros =[1,2,3]
+for letra in letras:
+    for numero in numeros:
+        print(f"{letra}{numero}")
 
+#break
+animales =["perro","gato","raton","loro","pez","canario"]
+for idx,animal in enumerate(animales):
 
-
-
-
+    if animal =="loro":
+      continue
+    print(animal)
 
 
 ###
