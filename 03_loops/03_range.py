@@ -3,14 +3,42 @@
 # Permite crear una secuencia de números. Puede ser útil para for, pero no solo para eso
 ###
 
+print ("\nrange():")
+nums =range(10)# si solo ponemos un numero es de 0 al numero puesto
+for num in range(10):
+    print(num)
+
+#range (inicio,fin)
+for num in range(5,10):
+    print(num)
+
+#range(inicio,fin,paso)
+for num in range(0,100,5):
+    print(num)
+for num in range(-5,0):
+    print(num)
+for num in range (10,0,-1):
+    print(num)
 
 
 
+nums = range (10)
+list_of_nums=list(nums)
+print(list_of_nums)
+
+contador = 0
+while contador < 5:
+    print("hacer cinco veceees algo")
+    contador+=1
+
+for _ in range(5):
+    print("hacer 5 veces algo ")
 
 
 
-
-
+for num in range(6):
+    print("-")
+print(num)
 
 ###
 # EJERCICIOS (range)
