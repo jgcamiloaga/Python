@@ -14,3 +14,44 @@ Crea una función en Python que reciba una cadena de texto. Esta función debe c
 - Si las cantidades no son iguales, la función debe retornar False.
 - En el caso de que no aparezca ninguna de las dos letras en la cadena, se entiende que el equilibrio se mantiene (0 = 0), por lo que la función debe retornar True.
 """
+"""
+respuesta =input("Ingrese una palabra: ")
+def contador_r_j(respuesta):
+    respuesta = respuesta.upper()
+    numero_de_r=respuesta.count("R")
+    numero_de_j =respuesta.count("J")
+    if numero_de_r == numero_de_j:
+        print(f"Los valores son iguales, Cantidad de J: {numero_de_j} Cantidad de R:{numero_de_r}")
+        return True
+    else:
+        print(f"Los valores no  son iguales, Cantidad de J: {numero_de_j} Cantidad de R:{numero_de_r}")
+        return False
+
+print(contador_r_j(respuesta))
+"""
+
+from os import system
+if system("clear") != 0: system("cls")
+
+text = "RRRRJJJjjjrrr"
+
+def check_is_balanced(text):
+  text = text.upper()
+
+  # contar facilmente el número de veces que aparece una letra
+  count_r = text.count("R") # Reed Richards
+  count_j = text.count("J") # Johnny Storm
+
+  print(f"count_r: {count_r} count_j: {count_j}")
+
+  # if count_r == count_j:
+  #   return True
+  # else:
+  #   return False
+
+  return count_r == count_j
+
+print(check_is_balanced("RRJJ"))
+print(check_is_balanced("RRRRJJ"))
+print(check_is_balanced("RRJJJJJJ"))
+print(check_is_balanced("awwwaqAQAQA"))
